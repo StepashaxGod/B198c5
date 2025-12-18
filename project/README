@@ -24,6 +24,14 @@ How to Run
 Using a virtual environment.
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
+
+# Windows (PowerShell)
+venv\Scripts\Activate.ps1
+
+# Windows (cmd)
+venv\Scripts\activate
+
+or
 pip install numpy pandas scikit-learn
 python run_all.py
 

@@ -31,7 +31,7 @@ venv\Scripts\Activate.ps1
 # Windows (cmd)
 venv\Scripts\activate
 
-or
+and final
 pip install numpy pandas scikit-learn
 python run_all.py
 

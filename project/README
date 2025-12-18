@@ -1,0 +1,36 @@
+Data Cleaning for Machine Learning
+
+Overview
+
+This project compares a fixed (manual) and an adaptive (performance-driven) data cleaning pipeline to evaluate their impact on machine learning model performance.
+The same dataset, model, and simulated data imperfections are used to ensure a fair comparison.
+
+Project Structure
+	run_all.py — main entry point; runs manual and adaptive pipelines and reports metrics
+	data_prep.py — data loading and dirty data generation
+	manual_pipeline.py — fixed cleaning pipeline
+	adaptive_pipeline.py — adaptive, metric-driven cleaning strategies
+	metrics_utils.py — model training and evaluation
+	winequality-red.csv — dataset
+
+Requirements
+	Python 3.9+
+	numpy
+	pandas
+	scikit-learn
+
+How to Run
+
+Using a virtual environment.
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+pip install numpy pandas scikit-learn
+python run_all.py
+
+Output
+
+The script prints:
+	dataset statistics before and after cleaning
+	performance metrics (RMSE, MAE, R²)
+	execution time
+	best adaptive cleaning strategy based on RMSE
